@@ -1,1 +1,1 @@
-web: gunicorn gettingstarted.wsgipip
+web: gunicorn myproject.wsgi
