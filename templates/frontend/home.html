@@ -1,0 +1,177 @@
+{% extends 'frontend/base.html' %}
+{% load static %}
+{% block content %}
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark navbar-custom fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#profile">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#education" data-toggle="modal">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact" data-toggle="modal">Contact</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead d-flex">
+        <div class="container text-center my-auto">
+            <h1 id="greeting"></h1>
+            <h1 id="day"></h1>
+
+    </header>
+
+    <!-- Profile -->
+    <section class="content-section bg-light" id="profile">
+        <div class="container text-center align-items-center">
+            <img class="masthead-avatar mb-5" src="{% static './img/avataaars.svg' %}" alt="profilepicture">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2>Napath Suksomsak</h2>
+                    <h4 class="text-secondary mb-3">ณภัทร สุขสมศักดิ์</h4>
+                    <p class="lead mb-5">
+                        ปัจจุบันกำลังศึกษาที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบังคณะวิศวกรรมศาสตร์สาขาวิชาวิศวกรรมสารสนเทศ
+                    </p>
+                </div>
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-birthday-cake fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4>
+                                <strong>Birthday</strong>
+                            </h4>
+                            <p class="text-faded mb-0">17.08.1999</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-calendar-alt fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4>
+                                <strong>Age</strong>
+                            </h4>
+                            <p class="text-faded mb-0">21</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="icon-like fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4>
+                                <strong>Favorites</strong>
+                            </h4>
+                            <p class="text-faded mb-0">Games, Movies
+                            </p>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-chess fa-stack-1x fa-inverse"></i>
+                            </span>
+
+                            <h4>
+                                <strong>Hobbies</strong>
+                            </h4>
+                            <p class="text-faded mb-0">Playing games, Watching movies, Reading</p>
+                        </div>
+                        <div class="col-6  mt-5">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-book fa-stack-1x fa-inverse"></i>
+                            </span>
+
+                            <h4>
+                                <strong>Favorite Subject</strong>
+                            </h4>
+                            <p class="text-faded mb-0">Wireless Communication Technologies</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education-->
+    <section class="content-section bg-secondary text-white text-center " id="education">
+        <div class="container ">
+            <div class="content-section-heading ">
+
+                <h2 class="mb-5">Education</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-secondary">2018 - Current</h4>
+                            <h2 class="card-title text-secondary">King Mongkut's Institute of Technology Ladkrabang</h2>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <div class="card h-100">
+
+                        <div class="card-body">
+                            <h4 class="card-title text-secondary">2015 - 2018</h4>
+                            <h2 class="card-title text-secondary">Chonprathanwittaya School</h2>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="callout" id="contact">
+        <div class="container">
+            <div class="content-section-heading text-center mb-5">
+
+                <h2 class="mb-5">Contact</h2>
+
+
+                <div>
+                    <h4 class="card-title text-left mb-5 mouse"><i class="fas fa-map-marker-alt mr-5"></i>18/1115
+                        หมู่บ้านเปี่ยมสุข ต.บางพูด อ.ปากเกร็ด จ.นนทบุรี 11120</h4>
+                    <h4 class="card-title text-left mb-5 mouse"><i class="fas fa-phone-alt mr-5"></i>0961387682</h4>
+                    <h4 class="card-title text-left mouse"><i class="fas fa-envelope mr-5"></i>61010293@kmitl.ac.th</h4>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    {% endblock %}
